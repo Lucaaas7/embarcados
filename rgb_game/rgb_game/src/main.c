@@ -1,3 +1,65 @@
+//codigo1
+
+int pin  = 8; //Vermermelho
+int pin2 = 9; //Verde
+int pin3 = 10; //Azul
+ 
+void setup() {
+    pinMode(pin, OUTPUT); //Pino 8 como saída
+    pinMode(pin2, OUTPUT); //Pino 9 como saída
+    pinMode(pin3, OUTPUT); //Pino 10 como saída
+}
+ 
+void loop() { 
+    purple();//Light Purple
+      delay(1000);//Wait for one seconds
+    orange();//Light Orange
+       delay(1000);//Wait for one seconds
+    blue();//Light Blue
+      delay(1000);//Wait for one seconds
+    pink();//Light Pink
+      delay(1000);//Wait for one seconds
+    palegreen();//Light PaleGreen
+      delay(1000);//Wait for one seconds
+      //Repeat
+}
+ 
+void orange(){
+ //Orange
+    analogWrite(pin, 255);  //RED
+    analogWrite(pin2, 128); //GREEN
+    analogWrite(pin3, 0); //BLUE
+}
+ 
+void purple(){
+    //PURPLE
+    analogWrite(pin, 104);  //RED
+    analogWrite(pin2, 153); //GREEN
+    analogWrite(pin3, 255); //BLUE
+}
+ 
+void blue(){
+    //PURPLE
+    (pin, 51);  //RED
+    analogWrite(pin2, 153); //GREEN
+    analogWrite(pin3, 255); //BLUE
+}
+ 
+void pink(){
+    //PINK
+    analogWrite(pin, 255);  //RED
+    analogWrite(pin2, 51); //GREEN
+    analogWrite(pin3, 153); //BLUE
+}
+ 
+void palegreen(){
+    //PALEGREEN 
+    analogWrite(pin, 154);  //RED
+    analogWrite(pin2, 255); //GREEN
+    analogWrite(pin3, 154); //BLUE
+}
+
+//codigo2
 // RBG LED - Automatic Color Cycling
 //
 
